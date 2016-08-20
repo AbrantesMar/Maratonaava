@@ -1,0 +1,12 @@
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe.config
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.pdb
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.csprojResolveAssemblyReference.cache
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.exe
+c:\users\marcio-abrantes\documents\visual studio 2015\Projects\MaratonaAvanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.pdb
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe.config
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.exe
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.pdb
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.pdb
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.csprojResolveAssemblyReference.cache
