@@ -1,0 +1,6 @@
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe.config
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\bin\Debug\MaratonaAvanade.pdb
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\Maratona.csprojResolveAssemblyReference.cache
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.exe
+C:\Users\marcio-abrantes\Source\Repos\Maratonaavanade\MaratonaAvanade\obj\Debug\MaratonaAvanade.pdb
