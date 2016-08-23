@@ -46,6 +46,7 @@
     <Compile Include="Jogador.cs" />
     <Compile Include="JogadorPrincipal.cs" />
     <Compile Include="JogadorSecundario.cs" />
+    <Compile Include="Jogo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

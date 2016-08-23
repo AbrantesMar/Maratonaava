@@ -8,8 +8,15 @@ namespace Maratona
 {
     public class JogadorPrincipal : Jogador
     {
-        public JogadorPrincipal(List<int> cartas) : base(cartas)
+        public JogadorPrincipal()
         {
         }
+
+        //public override int Jogar(IList<int> listaCartasDisponiveis)
+        //{
+
+
+        //    return base.Jogar(listaCartasDisponiveis);
+        //}
     }
 }
