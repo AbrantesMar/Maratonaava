@@ -65,56 +65,207 @@ namespace Maratona
 
         private int RegraDosQuatro(IList<int> listaCartasDisponiveis)
         {
-            int primeiraCarta = listaCartasDisponiveis[0];
-            int ultimaCarta = listaCartasDisponiveis[listaCartasDisponiveis.Count() - 1];
+            var listaux = listaCartasDisponiveis.ToList();
+            List<int> ListaCartasSelecionadasEsquerda = new List<int>();
+            List<int> ListaCartasSelecionadasDireita = new List<int>();
+            int primeiraCarta = 0;
+            int ultimaCarta = 0;
             int segundaCarta = 0;
             int penultimaCarta = 0;
+            int esquerda = 0;
+            int direita = 0;
 
-            if (listaCartasDisponiveis.Count > 2)
+            do
             {
-                segundaCarta = listaCartasDisponiveis[1];
-                penultimaCarta = listaCartasDisponiveis[listaCartasDisponiveis.Count() - 2];
-            }
+                primeiraCarta = listaux.First();
+                ultimaCarta = listaux.Last();
+                segundaCarta = 0;
+                penultimaCarta = 0;
 
-            IList<int> cartas = new List<int>();
-            cartas.Add(primeiraCarta);
-            cartas.Add(segundaCarta);
-            cartas.Add(penultimaCarta);
-            cartas.Add(ultimaCarta);
+                if (listaux.Count > 2)
+                {
+                    segundaCarta = listaux[1];
+                    penultimaCarta = listaux[listaux.Count() - 2];
+                }
 
-            int maior = listaCartasDisponiveis.Max();
+                if (primeiraCarta.Equals(listaCartasDisponiveis.First()))
+                {
+                    ListaCartasSelecionadasEsquerda.Add(primeiraCarta);
+                    listaux.Remove(primeiraCarta);
+
+                    if (segundaCarta > ultimaCarta)
+                    {
+                        listaux.Remove(segundaCarta);
+                    }
+                    else
+                    {
+                        listaux.Remove(ultimaCarta);
+                    }
+
+                }
+                else
+                {
+                    esquerda = primeiraCarta + penultimaCarta;
+                    direita = ultimaCarta + segundaCarta;
+                    if (esquerda > direita)
+                    {
+                        ListaCartasSelecionadasEsquerda.Add(primeiraCarta);
+                        listaux.Remove(primeiraCarta);
+
+                        if (segundaCarta > ultimaCarta)
+                        {
+                            listaux.Remove(segundaCarta);
+                        }
+                        else
+                        {
+                            listaux.Remove(ultimaCarta);
+                        }
+                    }
+                    else
+                    {
+                        ListaCartasSelecionadasEsquerda.Add(ultimaCarta);
+                        listaux.Remove(ultimaCarta);
+
+                        if (primeiraCarta > penultimaCarta)
+                        {
+                            listaux.Remove(primeiraCarta);
+                        }
+                        else
+                        {
+                            listaux.Remove(penultimaCarta);
+                        }
+                    }
+                }
+
+                if (listaux.Count().Equals(1))
+                {
+                    listaux.Clear();
+                }             
+
+
+            } while (listaux.Count() > 0);
+
+
+            listaux = listaCartasDisponiveis.ToList();
+            do
+            {
+                primeiraCarta = listaux.First();
+                ultimaCarta = listaux.Last();
+                segundaCarta = 0;
+                penultimaCarta = 0;
+
+                if (listaux.Count > 2)
+                {
+                    segundaCarta = listaux[1];
+                    penultimaCarta = listaux[listaux.Count() - 2];
+                }
+
+                if (ultimaCarta.Equals(listaCartasDisponiveis.Last()))
+                {
+                    ListaCartasSelecionadasDireita.Add(ultimaCarta);
+                    listaux.Remove(ultimaCarta);
+
+                    if (primeiraCarta > penultimaCarta)
+                    {
+                        listaux.Remove(primeiraCarta);
+                    }
+                    else
+                    {
+                        listaux.Remove(penultimaCarta);
+                    }
+                }
+                else
+                {
+                    esquerda = primeiraCarta + penultimaCarta;
+                    direita = ultimaCarta + segundaCarta;
+                    if (esquerda > direita)
+                    {
+                        ListaCartasSelecionadasDireita.Add(primeiraCarta);
+                        listaux.Remove(primeiraCarta);
+
+                        if (segundaCarta > ultimaCarta)
+                        {
+                            listaux.Remove(segundaCarta);
+                        }
+                        else
+                        {
+                            listaux.Remove(ultimaCarta);
+                        }
+                    }
+                    else
+                    {
+                        ListaCartasSelecionadasDireita.Add(ultimaCarta);
+                        listaux.Remove(ultimaCarta);
+
+                        if (primeiraCarta > penultimaCarta)
+                        {
+                            listaux.Remove(primeiraCarta);
+                        }
+                        else
+                        {
+                            listaux.Remove(penultimaCarta);
+                        }
+                    }
+                }
+
+                if (listaux.Count().Equals(1))
+                {
+                    listaux.Clear();
+                }
+                
+
+            } while (listaux.Count() > 0);
+            
             int cartaSelecionada = 0;
-
-            if (maior.Equals(primeiraCarta))
+            if (ListaCartasSelecionadasEsquerda.Sum() > ListaCartasSelecionadasDireita.Sum())
             {
-                cartaSelecionada = primeiraCarta;
-            }
-            else if (maior.Equals(segundaCarta))
-            {
-                if(segundaCarta.Equals(penultimaCarta))
-                {
-                    cartaSelecionada = primeiraCarta > ultimaCarta ? primeiraCarta : ultimaCarta;
-                }
-                else
-                {
-                    cartaSelecionada = ultimaCarta;
-                }                
-            }
-            else if (maior.Equals(penultimaCarta))
-            {
-                if (segundaCarta.Equals(penultimaCarta))
-                {
-                    cartaSelecionada = primeiraCarta > ultimaCarta ? primeiraCarta : ultimaCarta;
-                }
-                else
-                {
-                    cartaSelecionada = primeiraCarta;
-                }
+                cartaSelecionada = listaCartasDisponiveis.First();
             }
             else
             {
-                cartaSelecionada = ultimaCarta;
+                cartaSelecionada = listaCartasDisponiveis.Last();
             }
+
+
+            //IList<int> cartas = new List<int>();
+            //cartas.Add(primeiraCarta);
+            //cartas.Add(segundaCarta);
+            //cartas.Add(penultimaCarta);
+            //cartas.Add(ultimaCarta);
+
+            //int maior = listaCartasDisponiveis.Max();
+            //int cartaSelecionada = 0;
+
+            //if (maior.Equals(primeiraCarta))
+            //{
+            //    cartaSelecionada = primeiraCarta;
+            //}
+            //else if (maior.Equals(segundaCarta))
+            //{
+            //    if(segundaCarta.Equals(penultimaCarta))
+            //    {
+            //        cartaSelecionada = primeiraCarta > ultimaCarta ? primeiraCarta : ultimaCarta;
+            //    }
+            //    else
+            //    {
+            //        cartaSelecionada = ultimaCarta;
+            //    }                
+            //}
+            //else if (maior.Equals(penultimaCarta))
+            //{
+            //    if (segundaCarta.Equals(penultimaCarta))
+            //    {
+            //        cartaSelecionada = primeiraCarta > ultimaCarta ? primeiraCarta : ultimaCarta;
+            //    }
+            //    else
+            //    {
+            //        cartaSelecionada = primeiraCarta;
+            //    }
+            //}
+            //else
+            //{
+            //    cartaSelecionada = ultimaCarta;
+            //}
 
             return cartaSelecionada;
         }

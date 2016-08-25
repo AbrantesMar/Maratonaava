@@ -10,3 +10,9 @@ C:\Workspaces\Maratonaava\MaratonaAvanade\obj\Debug\MaratonaAvanade.pdb
 C:\Workspaces\Maratonaava\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe
 C:\Workspaces\Maratonaava\MaratonaAvanade\bin\Debug\MaratonaAvanade.pdb
 C:\Workspaces\Maratonaava\MaratonaAvanade\obj\Debug\Maratona.csprojResolveAssemblyReference.cache
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe.config
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\obj\Debug\MaratonaAvanade.exe
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\obj\Debug\MaratonaAvanade.pdb
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\bin\Debug\MaratonaAvanade.exe
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\bin\Debug\MaratonaAvanade.pdb
+C:\Users\valdeir.a.coelho\Documents\Maratona\Maratonaava\MaratonaAvanade\obj\Debug\Maratona.csprojResolveAssemblyReference.cache

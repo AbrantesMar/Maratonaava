@@ -74,18 +74,18 @@ namespace Maratona
                 cartasDistribuicao.Append(string.Concat(carta, " "));
             }
 
-            //ListaCartas.Add(3);
-            //cartasDistribuicao.Append(string.Concat(3, " "));
-            //ListaCartas.Add(5);
-            //cartasDistribuicao.Append(string.Concat(5, " "));
-            //ListaCartas.Add(4);
-            //cartasDistribuicao.Append(string.Concat(4, " "));
-            //ListaCartas.Add(6);
-            //cartasDistribuicao.Append(string.Concat(6, " "));
-            //ListaCartas.Add(0);
-            //cartasDistribuicao.Append(string.Concat(0, " "));
             //ListaCartas.Add(1);
             //cartasDistribuicao.Append(string.Concat(1, " "));
+            //ListaCartas.Add(0);
+            //cartasDistribuicao.Append(string.Concat(0, " "));
+            //ListaCartas.Add(2);
+            //cartasDistribuicao.Append(string.Concat(2, " "));
+            //ListaCartas.Add(3);
+            //cartasDistribuicao.Append(string.Concat(3, " "));
+            //ListaCartas.Add(4);
+            //cartasDistribuicao.Append(string.Concat(4, " "));
+            //ListaCartas.Add(5);
+            //cartasDistribuicao.Append(string.Concat(5, " "));
             //ListaCartas.Add(7);
             //cartasDistribuicao.Append(string.Concat(7, " "));
             //ListaCartas.Add(9);

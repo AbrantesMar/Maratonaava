@@ -46,31 +46,31 @@ namespace Maratona
                 int cartaSelecionada;
                 int somatorioP1PrimeiroUltimo = 0;
                 int somatorioP1RegraQuatro = 0;
-                do
-                {
-                    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 0);
-                    jogo.AdicionarCartaSelecionada(cartaSelecionada);
-                    somatorioP1PrimeiroUltimo += cartaSelecionada;
+                //do
+                //{
+                //    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 0);
+                //    jogo.AdicionarCartaSelecionada(cartaSelecionada);
+                //    somatorioP1PrimeiroUltimo += cartaSelecionada;
 
-                    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 0);
-                    jogo.AdicionarCartaSelecionada(cartaSelecionada);
+                //    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 0);
+                //    jogo.AdicionarCartaSelecionada(cartaSelecionada);
 
-                } while (jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).Count() > 0);
+                //} while (jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).Count() > 0);
 
-                jogo.ListaCartasSelecionadas = new List<int>();
-                jogadorPrincipal = new JogadorPrincipal();
-                jogadorSecundario = new JogadorSecundario();
+                //jogo.ListaCartasSelecionadas = new List<int>();
+                //jogadorPrincipal = new JogadorPrincipal();
+                //jogadorSecundario = new JogadorSecundario();
 
-                do
-                {
-                    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 1);
-                    jogo.AdicionarCartaSelecionada(cartaSelecionada);
-                    somatorioP1RegraQuatro += cartaSelecionada;
+                //do
+                //{
+                //    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 1);
+                //    jogo.AdicionarCartaSelecionada(cartaSelecionada);
+                //    somatorioP1RegraQuatro += cartaSelecionada;
 
-                    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 1);
-                    jogo.AdicionarCartaSelecionada(cartaSelecionada);
+                //    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 1);
+                //    jogo.AdicionarCartaSelecionada(cartaSelecionada);
 
-                } while (jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).Count() > 0);
+                //} while (jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).Count() > 0);
 
                 jogo.ListaCartasSelecionadas = new List<int>();
                 jogadorPrincipal = new JogadorPrincipal();
@@ -79,10 +79,10 @@ namespace Maratona
                 int melhorRegra = somatorioP1PrimeiroUltimo > somatorioP1RegraQuatro ? 0 : 1;
                 do
                 {
-                    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), melhorRegra);
+                    cartaSelecionada = jogadorPrincipal.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 1);
                     jogo.AdicionarCartaSelecionada(cartaSelecionada);
 
-                    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), melhorRegra);
+                    cartaSelecionada = jogadorSecundario.Jogar(jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).ToList(), 0);
                     jogo.AdicionarCartaSelecionada(cartaSelecionada);
 
                 } while (jogo.ListaCartas.Except(jogo.ListaCartasSelecionadas).Count() > 0);
